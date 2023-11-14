@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "53a8a8d1-394f-4943-97f4-a422c10805c5",
+		"name": "Biblioteca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30782541"
+	},
+	"item": [
+		{
+			"name": "localhost:9006/autores/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_autor\":\"1\",\r\n    \"nombreCompleto\":\"Edgar Allan Poe\",\r\n    \"fechaNac\":\"1809-01-19\",\r\n    \"libros\" : [1111,2222,3333]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:9006/autores/crear"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9005/libros/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isbn\":\"1111\",\r\n    \"titulo\":\"El gato negro\",\r\n    \"anioPublicacion\":\"1843-08-19\",\r\n    \"descripcion\" : \"El gato negro es un cuento de horror\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:9005/libros/crear"
+			},
+			"response": []
+		}
+	]
+}
